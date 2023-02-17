@@ -31,9 +31,8 @@ client.on('message', async (message) => {
             prompt: message.body.slice(5),
             max_tokens: 4000,
         });
-        console.log(`Response GTP ${response.data.id}`, response.data)
+        console.log(`Response GTP ${response.data.id}`);
         for (const choice of response.data.choices) {
-            console.log(choice.text)
             await message.reply(choice.text);
         }
     }
