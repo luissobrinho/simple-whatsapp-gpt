@@ -7,7 +7,7 @@ const client = new Client({
 });
 
 const configuration = new Configuration({
-    apiKey: '',
+    apiKey: '{TOKEN-GTP}',
 });
 const openai = new OpenAIApi(configuration);
 
@@ -24,7 +24,7 @@ client.on('ready', () => {
 });
 
 client.on('message', async (message) => {
-    if(message.body.toLowerCase().startsWith('papai')) {
+    if(message.body.toLowerCase().startsWith('{TRIGGER}')) {
         console.log(`Message: ${message.body.slice(5)}`)
         const response = await openai.createCompletion({
             model: "text-davinci-003",
