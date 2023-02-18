@@ -27,7 +27,8 @@ Para instalar e usar o Whatsapp + ChatGPT, siga estas etapas:
       1. `{TOKEN-GTP}` => sk-13...
       2. `{TRIGGER}` => chatbot
 5. Inicie o chatbot executando o seguinte comando `yarn start`
-6. Inicie uma conversa com o chatbot, por exemplo: "*chatbot* crie um docker para nodejs".
+6. Ler o QRCode gerado no terminal com seu APP do Whatsapp, [saiba como](https://faq.whatsapp.com/1079327266110265/?cms_platform=android).
+7. Inicie uma conversa com o chatbot, por exemplo: "*chatbot* crie um docker para nodejs".
 
 ## Documentação
 
