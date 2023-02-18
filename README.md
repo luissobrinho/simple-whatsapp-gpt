@@ -22,9 +22,9 @@ Para instalar e usar o Whatsapp + ChatGPT, siga estas etapas:
 1. Faça o clone do projeto.
 2. Abra abra um terminal na pasta do projeto.
 3. Execute o seguinte commando ```yarn```.
-4. Edite o arquivo `index.js` substituindo `{TOKEN-GTP}` por seu token no [GPT-3](https://openai.com/api/) e `{TRIGGER}` para o gatilho do seu desejo para ativar o chatbot.
+4. Edite o arquivo `index.js` substituindo `{TOKEN-GPT}` por seu token no [GPT-3](https://openai.com/api/) e `{TRIGGER}` para o gatilho do seu desejo para ativar o chatbot.
    1. Exemplo:
-      1. `{TOKEN-GTP}` => sk-13...
+      1. `{TOKEN-GPT}` => sk-13...
       2. `{TRIGGER}` => chatbot
 5. Inicie o chatbot executando o seguinte comando `yarn start`
 6. Ler o QRCode gerado no terminal com seu APP do Whatsapp, [saiba como](https://faq.whatsapp.com/1079327266110265/?cms_platform=android).

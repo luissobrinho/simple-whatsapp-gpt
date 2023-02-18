@@ -7,7 +7,7 @@ const client = new Client({
 });
 
 const configuration = new Configuration({
-    apiKey: '{TOKEN-GTP}',
+  apiKey: "{TOKEN-GPT}",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -24,11 +24,12 @@ client.on('ready', () => {
 });
 
 client.on('message', async (message) => {
-    if(message.body.toLowerCase().startsWith('{TRIGGER}')) {
-        console.log(`Message: ${message.body.slice(5)}`)
+    const trigger = '{TRIGGER}';
+    if(message.body.toLowerCase().startsWith(trigger)) {
+        console.log(`Message: ${message.body.slice(trigger.length)}`)
         const response = await openai.createCompletion({
             model: "text-davinci-003",
-            prompt: message.body.slice(5),
+            prompt: message.body.slice(trigger.length),
             max_tokens: 4000,
         });
         console.log(`Response GTP ${response.data.id}`);
